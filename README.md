@@ -90,15 +90,18 @@ src/
  │    ├── auth.module.ts
  │    ├── jwt.strategy.ts
  │    └── dto/
+ 
  ├── user/
  │    ├── user.controller.ts
  │    ├── user.service.ts
  │    └── user.module.ts
  ├── chat/
+ 
  │    ├── message.controller.ts
  │    ├── message.service.ts
  │    └── chat.module.ts
  ├── prisma/
+ 
  │    ├── prisma.service.ts
  │    └── prisma.module.ts
  └── app.module.ts
