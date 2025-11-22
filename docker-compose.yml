@@ -1,0 +1,17 @@
+
+version: '3.9'
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    container_name: my-postgres
+    environment:
+      POSTGRESQL_USERNAME: myuser
+      POSTGRESQL_PASSWORD: mypassword
+      POSTGRESQL_DATABASE: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/bitnami/postgresql
+
+volumes:
+  pgdata:
